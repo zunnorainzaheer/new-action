@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/pkg/errors"
+	"os"
+)
 
 func main() {
-	fmt.Println("zunnorain")
+	fmt.Println(errors.New("new error created by "), os.Getenv("NAME"))
 }

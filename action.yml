@@ -1,6 +1,12 @@
 name: 'Hello World'
 description: 'Greet someone'
 
+inputs:
+  username:  # id of input
+    description: 'username'
+    required: true
+    default: 'zunnorain'
+
 runs:
   using: "composite"
   steps:
@@ -11,3 +17,5 @@ runs:
         go-version: '1.16.8'
     - shell: bash
       run: go run ${{ github.action_path }}/main.go
+      env:
+        NAME: "${{ inputs.username }}"
