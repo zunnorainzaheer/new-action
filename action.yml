@@ -4,7 +4,7 @@ description: 'Greet someone'
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v2
+    - uses: zunnorainzaheer/action-client@main
     - name: Golang
       uses: actions/setup-go@v2
       with:
