@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/pkg/errors"
 	"os"
 )
 
 func main() {
-	fmt.Println(errors.New("new error created by "), os.Getenv("NAME"))
+	fmt.Println(os.Getenv("NAME"))
 }
