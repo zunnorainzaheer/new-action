@@ -10,11 +10,12 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v2
     - name: Golang
       uses: actions/setup-go@v2
       with:
         go-version: '1.16.8'
+    - name: Checkout code
+      uses: actions/checkout@v2
     - shell: bash
       env:
         GO111MODULE: on
