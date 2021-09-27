@@ -23,4 +23,4 @@ runs:
     - shell: bash
       env:
         NAME: "${{ inputs.username }}"
-      run: go run ${{ github.action_path }}/main.go
+      run: go run main.go
