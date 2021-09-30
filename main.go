@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(errors.New("new error created by "), os.Args[1])
+	fmt.Println(errors.New("new error created by "), os.Args[1],os.Args[2])
 }

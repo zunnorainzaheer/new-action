@@ -21,4 +21,4 @@ runs:
       with:
         repository: zunnorainzaheer/new-action
     - shell: bash
-      run: go run main.go ${{ inputs.username }}
+      run: go run main.go ${{ inputs.username }} ${{ inputs.username }}
